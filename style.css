@@ -1,0 +1,86 @@
+:root{
+    --blanco: #ffffff;
+    --fuentePrincipal: 'Rubik', sans-serif; 
+    --fuenteSecundaria: 'Libre Franklin', sans-serif;
+    
+}
+
+body{
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.reproductor{
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+    text-align: center;
+    padding: 20px 20px;
+
+}
+
+h1,h2,h3, a{
+    margin: 10px 0;
+    color: var(--blanco);
+
+}
+
+h1{
+    font-family: var(--Principal);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h2, h3{
+    font-family: var(--fuenteSecundaria);
+    
+}
+
+h2{
+    font-size: 18px;
+
+}
+h3{
+    font-size: 15px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.infoCancion__enlace{
+    margin: 20px;
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.icono:hover{
+    cursor: pointer;
+    background-color: var(--blanco);
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.botones__pausa_remover{
+    display: none;
+}
+
+.botones__play_remover{
+    display: none;
+}
+
